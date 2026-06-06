@@ -1,0 +1,251 @@
+/* Base Styles & Theme Variables - Light Luxury Makeover */
+:root {
+    --bg-light-glass: rgba(255, 255, 255, 0.85);
+    --bg-solid-light: #ffffff;
+    --bg-subtle-gray: #f8f9fa;
+    --text-dark: #1a1a1a;
+    --text-muted: #6c757d;
+    --accent-red: #dc3545;
+    --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-solid-light);
+    color: var(--text-dark);
+}
+
+/* Ensure all head elements are properly colored dark */
+h1, h2, h3, h4, h5, h6, .card-title {
+    color: #1a1a1a !important;
+    font-weight: 700;
+}
+
+/* Fixed Inline Navbar Styles */
+.main-navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px 0;
+    transition: var(--transition-smooth);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    z-index: 1050;
+}
+
+.main-navbar.navbar-scrolled {
+    background-color: var(--bg-light-glass);
+    padding: 12px 0;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: var(--text-dark) !important;
+}
+
+/* Ensure clean inline alignment layout */
+.horizontal-nav {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin: 0 12px;
+    position: relative;
+    transition: var(--transition-smooth);
+    white-space: nowrap;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--accent-red) !important;
+}
+
+/* Hero Section Controls */
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--bg-subtle-gray);
+}
+
+.hero-carousel .carousel-item {
+    height: 100vh;
+}
+
+.hero-slide-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding-top: 100px;
+}
+
+/* 3D Dynamic Car Container Layout Structure */
+.bg-danger-subtle3d-perspective {
+    perspective: 1200px;
+}
+
+.dynamic-3d-car {
+    max-height: 52vh;
+    object-fit: contain;
+    filter: drop-shadow(0px 25px 35px rgba(0,0,0,0.15));
+    transform-style: preserve-3d;
+    display: block;
+    width: 100%;
+}
+
+/* Car Shadow Tracking */
+.car-shadow {
+    width: 80%;
+    height: 20px;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 70%);
+    border-radius: 50%;
+    margin-top: -15px;
+    mix-blend-mode: multiply;
+}
+
+/* Showcase Filter Matrix Engine */
+.custom-filter-tabs .filter-btn {
+    color: var(--text-dark);
+    background: var(--bg-subtle-gray);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.custom-filter-tabs .filter-btn.active {
+    background-color: var(--accent-red) !important;
+    border-color: var(--accent-red) !important;
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.2);
+    color: white !important;
+}
+
+.car-glass-card {
+    background: var(--bg-solid-light) !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.car-glass-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0, 0, 0, 0.12) !important;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.car-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+    background: var(--bg-subtle-gray);
+}
+
+.showroom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature-interactive-row {
+    background: var(--bg-subtle-gray);
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: var(--transition-smooth);
+}
+
+.feature-interactive-row:hover {
+    background: #ffffff;
+    border-color: rgba(220, 53, 69, 0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    transform: translateX(5px);
+}
+
+.bg-danger-subtle {
+    background-color: rgba(220, 53, 69, 0.08) !important;
+}
+
+.invert-icon {
+    filter: invert(1);
+}
+
+/* Base Visibility Fallbacks - Content Always On Display */
+.reveal-on-scroll, .contact-fade-up {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: var(--transition-smooth);
+}
+
+/* Category Matrix Layout Toggling utility helpers */
+.hide-item {
+    display: none !important;
+}
+.fade-animation {
+    animation: fadeInSmooth 0.5s ease-in-out forwards;
+}
+@keyframes fadeInSmooth {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Input Customization Elements for Premium View */
+.custom-input-field {
+    border: 1px solid rgba(0,0,0,0.08) !important;
+    background-color: #fdfdfd !important;
+    padding: 0.75rem 1rem;
+    border-radius: 10px !important;
+    color: #212529 !important;
+}
+
+.custom-input-field:focus {
+    background-color: #ffffff !important;
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.1) !important;
+}
+
+/* Contact Hover Interactions */
+.contact-info-hover-row {
+    transition: transform 0.3s ease;
+}
+.contact-info-hover-row:hover {
+    transform: translateX(6px);
+}
+
+/* Footer Interactions */
+.social-circle-link {
+    width: 38px;
+    height: 38px;
+    background-color: #f8f9fa;
+    color: #6c757d !important;
+    transition: all 0.3s ease;
+}
+
+.social-circle-link:hover {
+    background-color: #dc3545;
+    color: #ffffff !important;
+    transform: translateY(-4px);
+}
+
+.footer-links-list a {
+    transition: all 0.25s ease;
+}
+.footer-links-list a:hover {
+    color: #dc3545 !important;
+    padding-left: 4px;
+}

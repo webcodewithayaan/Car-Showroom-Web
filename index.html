@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Motors | Luxury Car Showroom</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="text-danger fw-bold">APEX</span>MOTORS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center horizontal-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inventory">Fleet Matrix</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#budget-tier">Budget Tiers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#why-choose-us">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-danger cta-btn px-4 py-2" href="#contact">Book a Test Drive</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel Section -->
+    <div id="heroShowroomCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel" data-bs-interval="6000">
+        <div class="carousel-indicators custom-indicators">
+            <button type="button" data-bs-target="#heroShowroomCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroShowroomCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroShowroomCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="hero-slide-bg" style="background: linear-gradient(rgba(255,255,255,0.8), rgba(248,249,250,0.85)), url('https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1920') center/cover no-repeat;"></div>
+                <div class="container hero-content-wrapper">
+                    <div class="row align-items-center h-100">
+                        <div class="col-lg-6 text-section">
+                            <span class="badge bg-danger mb-3 tracking-widest">PERFORMANCE REDEFINED</span>
+                            <h1 class="display-3 fw-bold text-dark mb-3">APEX GTR <span class="text-danger">V8</span></h1>
+                            <p class="lead text-muted mb-4">Experience raw, unrestricted power engineered with track-focused aerodynamics and precision handling protocols.</p>
+                            <div class="d-flex gap-3">
+                                <a href="#inventory" class="btn btn-danger btn-lg rounded-pill px-4">Explore Specs</a>
+                                <a href="#contact" class="btn btn-outline-dark btn-lg rounded-pill px-4"><i class="fa-solid fa-play me-2"></i> Book Slot</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 image-section 3d-perspective">
+                            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=800" alt="Apex GTR Performance Car" class="img-fluid dynamic-3d-car animate-3d-element">
+                            <div class="car-shadow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="hero-slide-bg" style="background: linear-gradient(rgba(255,255,255,0.8), rgba(248,249,250,0.85)), url('https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1920') center/cover no-repeat;"></div>
+                <div class="container hero-content-wrapper">
+                    <div class="row align-items-center h-100">
+                        <div class="col-lg-6 text-section">
+                            <span class="badge bg-info text-white mb-3 tracking-widest">SUSTAINABLE LUXURY</span>
+                            <h1 class="display-3 fw-bold text-dark mb-3">E-VOLT <span class="text-info">GT</span></h1>
+                            <p class="lead text-muted mb-4">Zero emissions, zero compromise. Dual-motor high performance generating over 750 horsepower instantly.</p>
+                            <div class="d-flex gap-3">
+                                <a href="#inventory" class="btn btn-info text-white btn-lg rounded-pill px-4">Configure Build</a>
+                                <a href="#contact" class="btn btn-outline-dark btn-lg rounded-pill px-4">Secure Allocation</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 image-section 3d-perspective">
+                            <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=800" alt="E-Volt GT" class="img-fluid dynamic-3d-car animate-3d-element">
+                            <div class="car-shadow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="hero-slide-bg" style="background: linear-gradient(rgba(255,255,255,0.8), rgba(248,249,250,0.85)), url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1920') center/cover no-repeat;"></div>
+                <div class="container hero-content-wrapper">
+                    <div class="row align-items-center h-100">
+                        <div class="col-lg-6 text-section">
+                            <span class="badge bg-warning text-dark mb-3 tracking-widest">COMMANDING PRESENCE</span>
+                            <h1 class="display-3 fw-bold text-dark mb-3">TERRA <span class="text-warning">X-TREME</span></h1>
+                            <p class="lead text-muted mb-4">Unmatched refinement engineered to conquer demanding trails while maintaining extreme cabin insulation.</p>
+                            <div class="d-flex gap-3">
+                                <a href="#inventory" class="btn btn-warning text-dark btn-lg rounded-pill px-4">View Gallery</a>
+                                <a href="#contact" class="btn btn-outline-dark btn-lg rounded-pill px-4">Locate Dealer</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 image-section 3d-perspective">
+                            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800" alt="Terra X-Treme SUV" class="img-fluid dynamic-3d-car animate-3d-element">
+                            <div class="car-shadow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev custom-nav-btn" type="button" data-bs-target="#heroShowroomCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon invert-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next custom-nav-btn" type="button" data-bs-target="#heroShowroomCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon invert-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Vehicle Showcase Section -->
+    <section class="py-5 showcase-section" id="inventory">
+        <div class="container py-4">
+            <div class="row mb-5 text-center reveal-on-scroll">
+                <div class="col-md-8 mx-auto">
+                    <span class="text-danger fw-bold text-uppercase tracking-wider">Our Fleet</span>
+                    <h2 class="display-5 text-dark fw-bold mt-2">Explore Elite Collections</h2>
+                    <div class="heading-line mx-auto bg-danger mt-3" style="width: 60px; height: 3px;"></div>
+                    <p class="text-muted mt-3">Discover engineering masterpieces curated for drivers who refuse to compromise on prestige, power, and zero-emission innovation.</p>
+                </div>
+            </div>
+
+            <!-- Interactive Category Filter Tabs -->
+            <div class="row mb-4 reveal-on-scroll">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center custom-filter-tabs" id="carFilterTabs">
+                        <li class="nav-item"><button class="nav-link active filter-btn" data-filter="all">All Fleet</button></li>
+                        <li class="nav-item"><button class="nav-link filter-btn" data-filter="supercars">Supercars</button></li>
+                        <li class="nav-item"><button class="nav-link filter-btn" data-filter="electric">Electric</button></li>
+                        <li class="nav-item"><button class="nav-link filter-btn" data-filter="suvs">SUVs</button></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Inventory Showcase Grid -->
+            <div class="row g-4 justify-content-center" id="carGrid">
+                <!-- Card 1 -->
+                <div class="col-xl-4 col-md-6 car-card-wrapper" data-category="supercars">
+                    <div class="card car-glass-card h-100">
+                        <div class="car-img-container">
+                            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=800" class="card-img-top showroom-img" alt="Apex Avent">
+                            <span class="badge position-absolute top-0 start-0 m-3 pill-badge bg-danger">V12 Track</span>
+                        </div>
+                        <div class="card-body d-flex flex-column text-dark">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0 text-dark">Apex Avent SV</h5>
+                                <span class="text-danger fw-bold font-monospace">$385,000</span>
+                            </div>
+                            <p class="card-text text-muted small flex-grow-1">Naturally aspirated 6.5L engine unleashing 780 horsepower with an active exhaust tone matrix.</p>
+                            <div class="row g-2 border-top border-light-subtle pt-3 mt-3 text-center text-muted small">
+                                <div class="col-4 border-end"><i class="fa-solid fa-gauge-high me-1 text-danger"></i> 2.8s</div>
+                                <div class="col-4 border-end"><i class="fa-solid fa-bolt me-1 text-warning"></i> 780 HP</div>
+                                <div class="col-4"><i class="fa-solid fa-gears me-1 text-info"></i> AWD</div>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-danger w-100 rounded-pill mt-4 view-details-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-xl-4 col-md-6 car-card-wrapper" data-category="electric">
+                    <div class="card car-glass-card h-100">
+                        <div class="car-img-container">
+                            <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=800" class="card-img-top showroom-img" alt="Neon Cruiser">
+                            <span class="badge position-absolute top-0 start-0 m-3 pill-badge bg-info text-white">Electric</span>
+                        </div>
+                        <div class="card-body d-flex flex-column text-dark">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0 text-dark">Neon Cruiser E-GT</h5>
+                                <span class="text-info fw-bold font-monospace">$142,000</span>
+                            </div>
+                            <p class="card-text text-muted small flex-grow-1">Next-gen solid-state battery architecture generating an estimated 520 miles of real-world cruising range.</p>
+                            <div class="row g-2 border-top border-light-subtle pt-3 mt-3 text-center text-muted small">
+                                <div class="col-4 border-end"><i class="fa-solid fa-gauge-high me-1 text-info"></i> 3.1s</div>
+                                <div class="col-4 border-end"><i class="fa-solid fa-battery-three-quarters me-1 text-success"></i> 520 mi</div>
+                                <div class="col-4"><i class="fa-solid fa-gears me-1 text-info"></i> Dual E</div>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-info w-100 rounded-pill mt-4 view-details-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-xl-4 col-md-6 car-card-wrapper" data-category="suvs">
+                    <div class="card car-glass-card h-100">
+                        <div class="car-img-container">
+                            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800" class="card-img-top showroom-img" alt="Titan Overlord">
+                            <span class="badge position-absolute top-0 start-0 m-3 pill-badge bg-warning text-dark">Luxury SUV</span>
+                        </div>
+                        <div class="card-body d-flex flex-column text-dark">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0 text-dark">Titan Overlord V8</h5>
+                                <span class="text-warning fw-bold font-monospace">$189,500</span>
+                            </div>
+                            <p class="card-text text-muted small flex-grow-1">Hand-crafted fine leather configurations featuring customizable matrix air ride adaptive active suspension setups.</p>
+                            <div class="row g-2 border-top border-light-subtle pt-3 mt-3 text-center text-muted small">
+                                <div class="col-4 border-end"><i class="fa-solid fa-gauge-high me-1 text-warning"></i> 4.3s</div>
+                                <div class="col-4 border-end"><i class="fa-solid fa-couch me-1 text-primary"></i> 7 Seat</div>
+                                <div class="col-4"><i class="fa-solid fa-road me-1 text-success"></i> 4x4 Off</div>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-warning w-100 rounded-pill mt-4 view-details-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Price Budget Tier Section -->
+    <section class="py-5 bg-light" id="budget-tier">
+        <div class="container py-4">
+            <div class="row mb-5 text-center reveal-on-scroll">
+                <div class="col-md-8 mx-auto">
+                    <span class="text-danger fw-bold text-uppercase tracking-wider">Strategic Acquisition</span>
+                    <h2 class="display-5 text-dark fw-bold mt-2">Acquisition Budget Matrix</h2>
+                    <div class="heading-line mx-auto bg-danger mt-3" style="width: 60px; height: 3px;"></div>
+                    <p class="text-muted mt-3">Select your target financial profile to filter our hyper-engineered automotive assets appropriately.</p>
+                </div>
+            </div>
+
+            <div class="row g-4 text-dark">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 text-center h-100 rounded-4">
+                        <h4 class="fw-bold mb-2 text-dark">Core Premium</h4>
+                        <div class="text-danger display-6 fw-bold my-3">$80k - $150k</div>
+                        <p class="text-muted small">Access elite level track dynamics and executive long-range EV platforms with priority configurations.</p>
+                        <ul class="list-unstyled text-start my-4 small">
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-success me-2"></i> Dual Motor Architectures</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-success me-2"></i> 3-Year Standard Concierge</li>
+                        </ul>
+                        <a href="#inventory" class="btn btn-dark w-100 rounded-pill mt-auto">View Category</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-danger shadow p-4 text-center h-100 rounded-4 position-relative border-2">
+                        <span class="badge bg-danger position-absolute top-0 start-50 translate-middle rounded-pill px-3">MOST POPULAR</span>
+                        <h4 class="fw-bold mb-2 text-dark">Elite Vanguard</h4>
+                        <div class="text-danger display-6 fw-bold my-3">$150k - $300k</div>
+                        <p class="text-muted small">Hand-built interior matrix modules coupled with active race suspension arrays.</p>
+                        <ul class="list-unstyled text-start my-4 small">
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-success me-2"></i> Custom Paint Textures</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-success me-2"></i> Ceramic Matrix Braking</li>
+                        </ul>
+                        <a href="#inventory" class="btn btn-danger w-100 rounded-pill mt-auto">View Category</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 text-center h-100 rounded-4">
+                        <h4 class="fw-bold mb-2 text-dark">Hyper Custom</h4>
+                        <div class="text-danger display-6 fw-bold my-3">$300k+</div>
+                        <p class="text-muted small">Bespoke dynamic platforms tailoring raw V12 allocations for exclusive track networks.</p>
+                        <ul class="list-unstyled text-start my-4 small">
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-success me-2"></i> Titanium Exhaust Matrix</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-success me-2"></i> Unlimited Track Support</li>
+                        </ul>
+                        <a href="#inventory" class="btn btn-dark w-100 rounded-pill mt-auto">View Category</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW FEATURE SECTION: Advanced Mechanics Feature Section -->
+    <section class="py-5 features-calculator-section" id="why-choose-us">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <!-- Left: Core Feature List -->
+                <div class="col-lg-6 reveal-on-scroll">
+                    <span class="text-danger fw-bold text-uppercase tracking-wider">The Apex Standard</span>
+                    <h2 class="display-5 text-dark fw-bold mt-2 mb-4">Ownership Reimagined</h2>
+                    <p class="text-muted mb-4">We bridge the gap between pure mechanical performance and elite white-glove consumer relations. Every vehicle passing through our gates undergoes exhaustive preparation matrix certification.</p>
+                    
+                    <div class="feature-card-stack">
+                        <div class="d-flex feature-interactive-row p-3 mb-3 rounded-4 align-items-center">
+                            <div class="feature-icon-box bg-danger-subtle text-danger me-4 d-flex align-items-center justify-content-center" style="width:60px; height:60px; border-radius:12px; flex-shrink:0;">
+                                <i class="fa-solid fa-shield-halved fa-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1">Certified Premium Warranty</h5>
+                                <p class="text-muted small mb-0">Complete peace of mind coverage spanning 5 years or 60,000 miles with dedicated track concierge.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex feature-interactive-row p-3 mb-3 rounded-4 align-items-center">
+                            <div class="feature-icon-box bg-danger-subtle text-danger me-4 d-flex align-items-center justify-content-center" style="width:60px; height:60px; border-radius:12px; flex-shrink:0;">
+                                <i class="fa-solid fa-bolt fa-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1">Instant Matrix Grid Charging</h5>
+                                <p class="text-muted small mb-0">Integrated ultra-fast solid state infrastructure compatibility charging to 80% capacity within 12 minutes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Visual Feature Presentation Image Frame -->
+                <div class="col-lg-6 reveal-on-scroll">
+                    <div class="position-relative p-2 rounded-4 bg-white border shadow-sm overflow-hidden" style="height: 380px;">
+                        <img src="./af587dca-4baa-4e76-a16c-0e13086cf931.jpg" alt="Apex Manufacturing Engineering Core Tech Assembly Area" class="w-100 h-100 object-fit-cover rounded-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Matrix Section -->
+    <section class="py-5 contact-matrix-section" id="contact" style="background-color: #f8f9fa; overflow: hidden;">
+        <div class="container py-5">
+            <div class="row mb-5 text-center reveal-on-scroll">
+                <div class="col-md-8 mx-auto">
+                    <span class="text-danger fw-bold text-uppercase tracking-wider" style="letter-spacing: 2px; font-size: 0.9rem;">Establish Connection</span>
+                    <h2 class="display-5 text-dark fw-bold mt-2">Connect With Apex HQ</h2>
+                    <div class="heading-line mx-auto bg-danger mt-3" style="width: 60px; height: 3px;"></div>
+                    <p class="text-muted mt-3">Schedule a private showroom viewing, request a bespoke track test drive, or consult with our asset management advisors.</p>
+                </div>
+            </div>
+
+            <div class="row g-5 text-dark reveal-on-scroll">
+                <!-- Left Side Form -->
+                <div class="col-lg-7">
+                    <div class="p-4 p-md-5 rounded-4 bg-white border shadow-sm position-relative">
+                        <h4 class="fw-bold text-dark mb-4 d-flex align-items-center">
+                            <i class="fa-solid fa-calendar-check text-danger me-3"></i>Schedule Private Session
+                        </h4>
+                        
+                        <form id="apexContactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted small fw-medium">Full Name</label>
+                                    <input type="text" class="form-control custom-input-field" placeholder="John Doe" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted small fw-medium">Email Address</label>
+                                    <input type="email" class="form-control custom-input-field" placeholder="john@example.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted small fw-medium">Contact Number</label>
+                                    <input type="tel" class="form-control custom-input-field" placeholder="+1 (555) 000-0000" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted small fw-medium">Session Category</label>
+                                    <select class="form-select custom-input-field" required>
+                                        <option value="" selected disabled>Select Purpose</option>
+                                        <option value="test-drive">Track-Side Test Drive</option>
+                                        <option value="showroom">Showroom Private Tour</option>
+                                        <option value="finance">Asset Financing Counsel</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-muted small fw-medium">Bespoke Specifications</label>
+                                    <textarea class="form-control custom-input-field" rows="4" placeholder="Mention specific vehicle configurations..." required></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-danger w-100 rounded-pill py-3 fw-bold" id="submitFormBtn">
+                                        Transmit Secure Request <i class="fa-solid fa-paper-plane ms-2 small"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <div class="alert alert-success d-none position-absolute top-50 start-50 translate-middle text-center p-4 rounded-4 shadow-lg border-0" id="formSuccessBadge" style="z-index: 10; width: 85%;">
+                            <i class="fa-solid fa-circle-check text-success display-4 mb-3"></i>
+                            <h5 class="fw-bold text-dark">Transmission Successful</h5>
+                            <p class="text-muted small mb-0">Our executive concierge desk will contact you within 2 operational hours.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Map & Details -->
+                <div class="col-lg-5 d-flex flex-column justify-content-between">
+                    <div class="d-flex align-items-start p-4 rounded-4 bg-white border shadow-sm mb-3 contact-info-hover-row">
+                        <div class="bg-danger-subtle text-danger rounded-3 d-flex align-items-center justify-content-center me-4" style="width: 50px; height: 50px; flex-shrink: 0;">
+                            <i class="fa-solid fa-location-dot fa-lg"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-dark mb-1">Global Headquarters</h6>
+                            <p class="text-muted small mb-0">742 Elite Performance Way, Premium Auto District</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start p-4 rounded-4 bg-white border shadow-sm mb-3 contact-info-hover-row">
+                        <div class="bg-info-subtle text-info rounded-3 d-flex align-items-center justify-content-center me-4" style="width: 50px; height: 50px; flex-shrink: 0;">
+                            <i class="fa-solid fa-headset fa-lg"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-dark mb-1">Direct Hotlines</h6>
+                            <p class="text-muted small mb-0">Concierge: +1 (800) APEX-MTR</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start p-4 rounded-4 bg-white border shadow-sm mb-4 contact-info-hover-row">
+                        <div class="bg-warning-subtle text-warning rounded-3 d-flex align-items-center justify-content-center me-4" style="width: 50px; height: 50px; flex-shrink: 0;">
+                            <i class="fa-solid fa-clock fa-lg"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-dark mb-1">Operational Windows</h6>
+                            <p class="text-muted small mb-0">Mon - Sat: 09:00 AM - 08:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="rounded-4 overflow-hidden border shadow-sm flex-grow-1 position-relative map-visual-wrapper" style="min-height: 180px;">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=800" class="w-100 h-100 object-fit-cover absolute-center-img animate-zoom-slow" alt="Map Location Location">
+                        <div class="position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center bg-dark bg-opacity-40">
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-light rounded-pill px-4 btn-sm shadow fw-bold text-dark">
+                                <i class="fa-solid fa-map-location-dot text-danger me-2"></i>Launch Digital Navigation Map
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Brand Footer Section -->
+    <footer class="bg-white border-top py-5 text-dark footer-section">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="fw-bold text-dark mb-3 tracking-wider">APEX<span class="text-danger">MOTORS</span></h4>
+                    <p class="text-muted small">Engineering luxury experiences since inception. We curate architectural masterworks built for high-performance automotive connoisseurs globally.</p>
+                    <div class="d-flex gap-2 mt-4">
+                        <a href="#" class="social-circle-link border text-muted rounded-circle d-flex align-items-center justify-content-center text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-circle-link border text-muted rounded-circle d-flex align-items-center justify-content-center text-decoration-none"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-circle-link border text-muted rounded-circle d-flex align-items-center justify-content-center text-decoration-none"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-6 ms-lg-auto">
+                    <h6 class="text-dark fw-bold text-uppercase small mb-3 tracking-wider">Directory</h6>
+                    <ul class="list-unstyled footer-links-list small">
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Home Plateau</a></li>
+                        <li class="mb-2"><a href="#inventory" class="text-muted text-decoration-none">Elite Fleet</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="text-dark fw-bold text-uppercase small mb-3 tracking-wider">Acquisitions</h6>
+                    <ul class="list-unstyled footer-links-list small">
+                        <li class="mb-2"><a href="#budget-tier" class="text-muted text-decoration-none">Budget Matrix</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-muted text-decoration-none">Secure Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="text-dark fw-bold text-uppercase small mb-3 tracking-wider">Apex Dispatch</h6>
+                    <p class="text-muted small mb-3">Subscribe to receive priority asset allocation alerts, build updates, and private auction data.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control rounded-start-pill border custom-input-field py-2 px-3 text-dark bg-light" placeholder="Your Email Address" style="font-size: 0.85rem;">
+                        <button class="btn btn-danger rounded-end-pill px-3" type="button"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-light-subtle my-4">
+
+            <div class="row align-items-center g-2 text-muted small">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 x-small" style="color: #6c757d !important;">&copy; 2026 Apex Motors Inc. All Architectural Configurations & Engineering Assets Protected Locally & Internationally.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0 x-small">
+                        <li class="list-inline-item me-3"><a href="#" class="text-muted text-decoration-none">Privacy Charter</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-muted text-decoration-none">Underwriting Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
